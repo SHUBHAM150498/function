@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<style>
+.container{
+	background-image: linear-gradient(to bottom right, red, yellow);
+}	
+.main{
+	text-align: center;
+	color: darkblue;
+	background-image: radial-gradient(red, yellow, green);
+    padding: 10px;
+    margin: 10px;
+}
+.head{
+	color: black;
+}
+.question{
+	color: black;
+}
+.code{
+	background-color: white;
+	padding: 10px;
+}
+    </style>
+</head>
+<body>
+	<div class="container">
+	<div class="main"><h1>JavaScript Handson</h1></div>
+    <div class="main"><h1>FUNCTION</h1></div>
+	<br>
+	
+	<div class="question">1. Create a function with zero parameter having console statement</div>
+	<pre class="code">
+        function sum()
+        {
+            console.log("js");
+        }
+        sum();
+ 
+    </pre>
+    <br>
+    <hr>
+    <br>
+    
+    <div class="question">2. Create a function which takes two values as a parameter and print the sum of them as "Sum of 3 and 4 is 7"</div>
+    <pre class="code">
+        function add(a,b)
+        {
+            let sum;
+            sum=a+b;
+            console.log(sum); 
+        }
+        add(3,4);
+</pre>
+<br>
+<hr>
+<br>
+
+<div class="question">3. Create one arrow function</div>
+<pre class="code">
+    const addition = (a,b) =>{
+        let result = a+b;
+        console.log(result);
+    }
+    addition(6,8);
+</pre>
+<br>
+<hr>
+<br>
+
+<div class="question">4. Print Output</div>
+<pre class="code">
+    var x =21;
+    var girl = function()
+    {
+        console.log(x);
+        var x = 20;
+    }
+    girl();
+</pre>
+<div class="head">OUTPUT - undefined</div>
+<br>
+<hr>
+<br>
+
+<div class="question">5. Print Output</div>
+<pre class="code">
+    var x = 21;
+    girl ();
+    console.log(x)
+    function girl() {
+        console.log(x);
+        var x = 20;
+    };
+</pre>
+<div class="head">OUTPUT - 21</div>
+<br>
+<hr>
+<br>
+
+<div class="question">6. Print Output</div>
+<pre class="code">
+  var x = 21;
+  a();
+  b();
+  console.log(a);
+  a = function(){
+      x = 20;
+      console.log(x);
+  };
+  b = function(){
+      x = 40;
+      console.log(x);
+  };
+</pre>
+<div class="head">OUTPUT - index.js:87<br>Uncaught ReferenceError: a is not defined<br>at index.js:87:1</div>
+<br>
+<hr>
+<br>
+
+<div class="question">7. Print Output</div>
+<pre class="code">
+    function fact(n){
+        if (n===0)
+        {
+            return 1;
+        }
+            return (n * fact (n - 1));
+    }
+    console.log(fact(5));
+</pre>
+<div class="head">120</div>
+
+<br>
+</div>
+</body>
+</html>
